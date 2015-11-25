@@ -1,6 +1,8 @@
 Download 2 Virtual Machines ready to launch within Fusion on Mac OS X:
 https://blue-tale.mooo.com/owncloud/index.php/s/B6xnqb2lDqVoc5p
 
+MD5 (ESX02.zip) = 74cbe416ccaad55b93f81e70b7a5c17c
+
 ```
     ___ _____  __        ___         _    
    | __/ __\ \/ /   __ _| _ \___  __| |   
