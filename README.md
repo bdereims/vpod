@@ -6,13 +6,13 @@
    for Demo and Lab | Primary node        
                                          
                 
-ESX @IP: {ip}
-Entrypoint @IP: ####
+ESX @IP: {ip from Fusion}
+Entrypoint @IP: {vPodRouter ip provided by Fusion and printed automatically}
 Inside Network: 172.16.66.0/24
                 
 Put a static route on your box in order to reach the internal network:
-Mac OS: route add -net 172.16.66.0/24 ####
-Windows: route add 172.16.66.0 mask 255.255.255.0 ####
+Mac OS: route add -net 172.16.66.0/24 {vPodRouter ip}
+Windows: route add 172.16.66.0 mask 255.255.255.0 {vPodRouter ip}
                
 Gateway, DNS Server and NTP server: 172.16.66.1 (vPodRouter)
 DHCP Server for 172.16.66.200 to 172.16.66.254
