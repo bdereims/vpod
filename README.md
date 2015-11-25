@@ -23,6 +23,7 @@ Inside Network: 172.16.66.0/24
 Put a static route on your box in order to reach the internal network:
 Mac OS: route add -net 172.16.66.0/24 {vPodRouter ip}
 Windows: route add 172.16.66.0 mask 255.255.255.0 {vPodRouter ip}
+Test your env with: ping 172.16.66.1 (vPodRouter) and ping 172.16.66.2 (VCSA)
                
 Gateway, DNS Server and NTP server: 172.16.66.1 (vPodRouter)
 DHCP Server for 172.16.66.200 to 172.16.66.254
@@ -39,6 +40,8 @@ Credentials:
 vCenter -> administrator@vsphere.local / VMware1!
 ESX -> root / VMware1!
 vPodRouter -> vmware / VMware1! and root / VMware1!
+
+VCSA URL -> https://vcsa.vpod.local
 
 If you're facing some DHCP issues with VM receiving IP from Fusion instead
 of vPodRouter, you must disable Fusion's DHCP feature for the second NIC (often vmnet1).
