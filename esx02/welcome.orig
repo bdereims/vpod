@@ -1,0 +1,16 @@
+{bgcolor:yellow}{color:black}
+    ___ _____  __        ___         _    
+   | __/ __\ \/ /   __ _| _ \___  __| |   
+   | _|\__ \>  <    \ V /  _/ _ \/ _` |   
+   |___|___/_/\_\    \_/|_| \___/\__,_|   
+   for Demo and Lab | Secondary node      
+                                          
+{/color}{/bgcolor}
+                
+ESX @IP: {color:yellow}{bgcolor:black}{ip}{color:light-grey}{bgcolor:black}
+Inside Network: 172.16.66.0/24
+
+Please go to the console of primary node for all details and enabled services.
+
+
+bdereims@vmware.com
