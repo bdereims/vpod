@@ -27,6 +27,11 @@ You should add the DNS Server in your resolv.conf or entries below in etc/hosts:
 172.16.66.3 esx01.vpod.local
 172.16.66.4 esx02.vpod.local
 
+Credentials:
+vCenter -> administrator@vsphere.local / VMware1!
+ESX -> root / VMware1!
+vPodRouter -> vmware / VMware1! and root / VMware1!
+
 If you're facing some DHCP issues with VM receiving IP from Fusion instead
 of vPodRouter, you must disable Fusion's DHCP feature for the second NIC (often vmnet1).
 More details how to do it: http://goo.gl/B7N0j9
