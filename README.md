@@ -1,3 +1,6 @@
+Download 2 Virtual Machines ready to launch within Fusion on Mac OS X:
+https://blue-tale.mooo.com/owncloud/index.php/s/B6xnqb2lDqVoc5p
+
 ```
     ___ _____  __        ___         _    
    | __/ __\ \/ /   __ _| _ \___  __| |   
