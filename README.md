@@ -6,7 +6,7 @@ https://blue-tale.mooo.com/owncloud/index.php/s/B6xnqb2lDqVoc5p
    | __/ __\ \/ /   __ _| _ \___  __| |   
    | _|\__ \>  <    \ V /  _/ _ \/ _` |   
    |___|___/_/\_\    \_/|_| \___/\__,_|   
-   for Demo and Lab | Primary node        
+   for Demo and Lab         
                                          
                 
 ESX @IP: {ip from Fusion}
