@@ -2,9 +2,12 @@ Download 2 Virtual Machines ready to launch within Fusion on Mac OS X:
 https://blue-tale.mooo.com/owncloud/index.php/s/B6xnqb2lDqVoc5p
 
 ```
-MD5 (ESX01.zip) = 2342ec79081686bb51d36136787dd402
-MD5 (ESX02.zip) = 74cbe416ccaad55b93f81e70b7a5c17c
+MD5 (ESX01.zip) = 475d8c148d637d92641013d45728d902
+MD5 (ESX02.zip) = 1fa3571f3dda5a04665d5fe0f060659a
 ```
+
+Last Update: 2015 12 02 - 19:16 CET
+
 
 ***Wait at least 5' after lauching ESX VMs in order to see @IP of vPodRouter and to let VCSA a warm-up.***
 
