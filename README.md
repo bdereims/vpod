@@ -1,4 +1,4 @@
-![alt tag](ttp://blogs.vmware.com/vmworld/files/2015/08/CNA_logo-300x203.png)
+![alt tag](http://blogs.vmware.com/vmworld/files/2015/08/CNA_logo-300x203.png)
 
 Download 2 Virtual Machines ready to launch within Fusion on Mac OS X:
 https://blue-tale.mooo.com/owncloud/index.php/s/B6xnqb2lDqVoc5p
