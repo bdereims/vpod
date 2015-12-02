@@ -9,7 +9,7 @@ MD5 (ESX02.zip) = 1fa3571f3dda5a04665d5fe0f060659a
 Last Update: 2015 12 02 - 19:16 CET
 
 
-***Wait at least 5' after lauching ESX VMs in order to see @IP of vPodRouter and to let VCSA a warm-up.***
+***Wait at least 10' after lauching ESX VMs in order to see @IP of vPodRouter and to let VCSA a warm-up.***
 
 ```
     ___ _____  __        ___         _    
