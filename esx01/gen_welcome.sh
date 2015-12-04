@@ -1,5 +1,6 @@
 #!/bin/sh
-#Welcome Message                                                                                                                                                                                                        
+# Welcome Message
+# @bdereims
 
 ExtIP="<unset>"
 Waiter=1

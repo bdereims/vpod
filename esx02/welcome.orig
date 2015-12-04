@@ -10,7 +10,35 @@
 ESX @IP: {color:yellow}{bgcolor:black}{ip}{color:light-grey}{bgcolor:black}
 Inside Network: 172.16.66.0/24
 
+{color:dark-grey}{bgcolor:black}
 Please go to the console of primary node for all details and enabled services.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 bdereims@vmware.com | @bdereims | https://github.com/bdereims/vpod
