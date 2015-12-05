@@ -33,10 +33,12 @@ NFS Datastore: 172.16.66.1:/data
 SNAT outside networking to access Internet
                 
 You should add the DNS Server in your resolv.conf or entries below in etc/hosts:
+```
 172.16.66.1 vpodrouter.vpod.local
 172.16.66.2 vsca.vpod.local
 172.16.66.3 esx01.vpod.local
 172.16.66.4 esx02.vpod.local
+```
 
 Credentials:
 vCenter -> administrator@vsphere.local / VMware1!
@@ -51,5 +53,5 @@ of vPodRouter, you must disable Fusion's DHCP feature for the second NIC (often 
 (More details how to do it)[http://goo.gl/B7N0j9]
                 
                 
-bdereims@vmware.com | (@bdereims)[https://twitter.com/bdereims] | https://github.com/bdereims/vpod
+bdereims@vmware.com | [@bdereims](https://twitter.com/bdereims) | https://github.com/bdereims/vpod
 
