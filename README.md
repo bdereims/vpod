@@ -23,13 +23,12 @@ Last Update: 2015 12 05 - 10:33 CET
                 
 Put a static route on your box in order to reach the internal network:
 - The {vPodRouter IP} will be found on the ESX Console when vPodRouter VM is up and running.
-- Mac OS: route add -net 172.16.66.0/24 {vPodRouter IP}
-- Windows: route add 172.16.66.0 mask 255.255.255.0 {vPodRouter IP}
-- Test your env with: ping 172.16.66.1 (vPodRouter) and ping 172.16.66.2 (VCSA)
-               
+- Mac OS: ```route add -net 172.16.66.0/24 {vPodRouter IP}```
+- Windows: ```route add 172.16.66.0 mask 255.255.255.0 {vPodRouter IP}```
+- Test your env with: ```ping 172.16.66.1``` (vPodRouter) and ```ping 172.16.66.2``` (VCSA)
 - Gateway, DNS Server and NTP server: 172.16.66.1 (vPodRouter)
 - DHCP Server for 172.16.66.200 to 172.16.66.254
-- NFS Datastore: 172.16.66.1:/data
+- NFS Datastore: ```172.16.66.1:/data```
 - SNAT outside networking to access Internet
                 
 You should add the DNS Server in your resolv.conf or entries below in etc/hosts:
@@ -51,6 +50,8 @@ VCSA URL -> https://vcsa.vpod.local
 If you're facing some DHCP issues with VM receiving IP from Fusion instead
 of vPodRouter, you must disable Fusion's DHCP feature for the second NIC (often vmnet1).
 (More details how to do it)[http://goo.gl/B7N0j9]
+          
+          
                 
                 
 bdereims@vmware.com | [@bdereims](https://twitter.com/bdereims) | https://github.com/bdereims/vpod
