@@ -22,15 +22,15 @@ Last Update: 2015 12 05 - 10:33 CET
 ```                                         
                 
 Put a static route on your box in order to reach the internal network:
-The {vPodRouter IP} will be found on the ESX Console when vPodRouter VM is up and running.
-Mac OS: route add -net 172.16.66.0/24 {vPodRouter IP}
-Windows: route add 172.16.66.0 mask 255.255.255.0 {vPodRouter IP}
-Test your env with: ping 172.16.66.1 (vPodRouter) and ping 172.16.66.2 (VCSA)
+- The {vPodRouter IP} will be found on the ESX Console when vPodRouter VM is up and running.
+- Mac OS: route add -net 172.16.66.0/24 {vPodRouter IP}
+- Windows: route add 172.16.66.0 mask 255.255.255.0 {vPodRouter IP}
+- Test your env with: ping 172.16.66.1 (vPodRouter) and ping 172.16.66.2 (VCSA)
                
-Gateway, DNS Server and NTP server: 172.16.66.1 (vPodRouter)
-DHCP Server for 172.16.66.200 to 172.16.66.254
-NFS Datastore: 172.16.66.1:/data
-SNAT outside networking to access Internet
+- Gateway, DNS Server and NTP server: 172.16.66.1 (vPodRouter)
+- DHCP Server for 172.16.66.200 to 172.16.66.254
+- NFS Datastore: 172.16.66.1:/data
+- SNAT outside networking to access Internet
                 
 You should add the DNS Server in your resolv.conf or entries below in etc/hosts:
 ```
@@ -41,10 +41,10 @@ You should add the DNS Server in your resolv.conf or entries below in etc/hosts:
 ```
 
 Credentials:
-vCenter -> administrator@vsphere.local / VMware1!
-ESX -> root / VMware1!
-vPodRouter -> vmware / VMware1! and root / VMware1!
-NSX Manager -> admin / VMware1! and admin / VMware1!VMware1! for Controller and EdgeGW
+- vCenter -> administrator@vsphere.local / VMware1!
+- ESX -> root / VMware1!
+- vPodRouter -> vmware / VMware1! and root / VMware1!
+- NSX Manager -> admin / VMware1! and admin / VMware1!VMware1! for Controller and EdgeGW
 
 VCSA URL -> https://vcsa.vpod.local
 
