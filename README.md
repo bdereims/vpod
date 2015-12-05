@@ -3,8 +3,10 @@
 Download 2 Virtual Machines ready to launch within Fusion on Mac OS X (should also work with Workstation):
 https://blue-tale.mooo.com/owncloud/index.php/s/B6xnqb2lDqVoc5p
 
-```0a5c3e64e9faa0fce11923dcbbcb8ab16bdeeb9f  ESX01.ova 
-deee4669681770d0d64c1783238e898d422c6886  ESX02.ova```
+```
+0a5c3e64e9faa0fce11923dcbbcb8ab16bdeeb9f  ESX01.ova
+deee4669681770d0d64c1783238e898d422c6886  ESX02.ova
+```
 
 Last Update: 2015 12 05 - 10:33 CET
 
