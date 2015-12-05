@@ -1,6 +1,6 @@
 ![alt tag](http://blogs.vmware.com/vmworld/files/2015/08/CNA_logo-300x203.png)
 
-Download 2 Virtual Machines ready to launch within Fusion on Mac OS X:
+Download 2 Virtual Machines ready to launch within Fusion on Mac OS X (should also work with Workstation):
 https://blue-tale.mooo.com/owncloud/index.php/s/B6xnqb2lDqVoc5p
 
 ```
@@ -10,9 +10,6 @@ SHASUM (ESX02.ova) =
 
 Last Update: 2015 12 05 - 10:33 CET
 
-
-***Wait at least 20' after lauching ESX VMs in order to see @IP of vPodRouter and to let VCSA a warm-up.***
-
 ```
     ___ _____  __        ___         _    
    | __/ __\ \/ /   __ _| _ \___  __| |   
@@ -20,6 +17,10 @@ Last Update: 2015 12 05 - 10:33 CET
    |___|___/_/\_\    \_/|_| \___/\__,_|   
    for Demo and Lab         
 ```                                         
+
+#Installation and Setup
+
+***Wait at least 20' after lauching ESX VMs in order to see @IP of vPodRouter and to let VCSA a warm-up.***
                 
 Put a static route on your box in order to reach the internal network:
 - The {vPodRouter IP} will be found on the ESX Console when vPodRouter VM is up and running.
@@ -51,6 +52,16 @@ If you're facing some DHCP issues with VM receiving IP from Fusion instead
 of vPodRouter, you must disable Fusion's DHCP feature for the second NIC (often vmnet1).
 (More details how to do it)[http://goo.gl/B7N0j9]
 
+#vSphere Integrated Containers
+Quick and quite simple:
+- start VIC VM trough vCenter
+- login to VIC via SSH or console with ```root / VMware1!```
+- create a new VCH with the script ```./create-vch.sh VCH01 dsLocalESX01```
+- after creation you could enjoy a new container Host in setting ```export DOCKER_HOST=tcp://{VCH IP}:2376```
+
+Some caveats:
+- VCH creation from the GUI could not work due to unknown reason
+- VCH creation on the NFS Datastore is possible but performance is low
 
 bdereims@vmware.com | [@bdereims](https://twitter.com/bdereims) | https://github.com/bdereims/vpod
 
