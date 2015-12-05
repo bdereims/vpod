@@ -3,10 +3,8 @@
 Download 2 Virtual Machines ready to launch within Fusion on Mac OS X (should also work with Workstation):
 https://blue-tale.mooo.com/owncloud/index.php/s/B6xnqb2lDqVoc5p
 
-```
-SHASUM (ESX01.ova) = 0a5c3e64e9faa0fce11923dcbbcb8ab16bdeeb9f
-SHASUM (ESX02.ova) = 
-```
+```0a5c3e64e9faa0fce11923dcbbcb8ab16bdeeb9f  ESX01.ova 
+deee4669681770d0d64c1783238e898d422c6886  ESX02.ova```
 
 Last Update: 2015 12 05 - 10:33 CET
 
@@ -56,12 +54,15 @@ of vPodRouter, you must disable Fusion's DHCP feature for the second NIC (often 
 Quick and quite simple:
 - start VIC VM trough vCenter
 - login to VIC via SSH or console with ```root / VMware1!```
-- create a new VCH with the script ```./create-vch.sh VCH01 dsLocalESX01```
+- create a new VCH with the script ```./create-vch.sh VCH01 dsLocalESX01``` found in ```/root```
 - after creation you could enjoy a new container Host in setting ```export DOCKER_HOST=tcp://{VCH IP}:2376```
+- delete VCH with ```./destroy-vch.sh VCH01 dsLocalESX01```
 
 Some caveats:
-- VCH creation from the GUI could not work due to unknown reason
+- VCH creation from the GUI could not work due to unknown reasons
 - VCH creation on the NFS Datastore is possible but performance is low
+- You could create VCH and leverage NSX but you must create IPSets for FW containers
+
 
 bdereims@vmware.com | [@bdereims](https://twitter.com/bdereims) | https://github.com/bdereims/vpod
 
