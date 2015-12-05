@@ -1,6 +1,6 @@
 ![alt tag](http://blogs.vmware.com/vmworld/files/2015/08/CNA_logo-300x203.png)
 
-[Download 2 Virtual Machines ready to launch within Fusion on Mac OS X (should also work with Workstation)](https://blue-tale.mooo.com/owncloud/index.php/s/B6xnqb2lDqVoc5p)
+[Download 2 Virtual Machines ready to launch within Fusion on Mac OS X (should also work with Workstation and VirtualBox)](https://blue-tale.mooo.com/owncloud/index.php/s/B6xnqb2lDqVoc5p)
 
 ```
 SHASUM:
@@ -28,9 +28,9 @@ Put a static route on your box in order to reach the internal network:
 - Windows: ```route add 172.16.66.0 mask 255.255.255.0 {vPodRouter IP}```
 - Test your env with: ```ping 172.16.66.1``` (vPodRouter) and ```ping 172.16.66.2``` (VCSA)
 - Gateway, DNS Server and NTP server: 172.16.66.1 (vPodRouter)
-- DHCP Server for 172.16.66.200 to 172.16.66.254
+- vPodRouter is a DHCP Server for 172.16.66.200 to 172.16.66.254
 - NFS Datastore: ```172.16.66.1:/data```
-- SNAT outside networking to access Internet
+- SNAT outside network to access Internet
                 
 You should add the DNS Server in your resolv.conf or entries below in etc/hosts:
 ```
