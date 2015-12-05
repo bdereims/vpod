@@ -40,19 +40,17 @@ You should add the DNS Server in your resolv.conf or entries below in etc/hosts:
 ```
 
 Credentials:
-- vCenter -> administrator@vsphere.local / VMware1!
-- ESX -> root / VMware1!
-- vPodRouter -> vmware / VMware1! and root / VMware1!
-- NSX Manager -> admin / VMware1! and admin / VMware1!VMware1! for Controller and EdgeGW
+- vCenter -> ```administrator@vsphere.local / VMware1!```
+- ESX -> ```root / VMware1!```
+- vPodRouter -> ```vmware / VMware1!```
+- NSX Manager -> ```admin / VMware1!``` and ```admin / VMware1!VMware1!``` for Controller and EdgeGW
 
 VCSA URL -> https://vcsa.vpod.local
 
 If you're facing some DHCP issues with VM receiving IP from Fusion instead
 of vPodRouter, you must disable Fusion's DHCP feature for the second NIC (often vmnet1).
 (More details how to do it)[http://goo.gl/B7N0j9]
-          
-          
-                
-                
+
+
 bdereims@vmware.com | [@bdereims](https://twitter.com/bdereims) | https://github.com/bdereims/vpod
 
