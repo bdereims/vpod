@@ -21,6 +21,12 @@ Last Update: 2015 12 05 - 10:33 CET
 #Installation and Setup
 
 ***Wait at least 20' after lauching ESX VMs in order to see @IP of vPodRouter and to let VCSA a warm-up.***
+ 
+##Nested Env
+Fusion configuration:
+!(Fusion Configuration)[https://github.com/bdereims/vpod/blob/master/nested/Expose%20Hardware%20Nested%20ESX.png]
+Nested ESX in VCSA:
+
                 
 Put a static route on your box in order to reach the internal network:
 - The {vPodRouter IP} will be found on the ESX Console when vPodRouter VM is up and running.
