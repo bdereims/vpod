@@ -24,7 +24,8 @@ Last Update: 2015 12 05 - 10:33 CET
  
 ##Nested Env
 Fusion configuration:
-!(Fusion Configuration)[https://github.com/bdereims/vpod/blob/master/nested/Expose%20Hardware%20Nested%20ESX.png]
+![Fusion Configuration](https://github.com/bdereims/vpod/blob/master/nested/Expose%20Hardware%20Nested%20ESX.png)
+
 Nested ESX in VCSA:
 
                 
