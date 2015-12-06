@@ -27,7 +27,7 @@ Fusion configuration, nothing to do if you import the OVA:
 
 ![Fusion Configurqtion](https://github.com/bdereims/vpod/blob/master/nested/VT-x%20EPT%20Fusion.png)
 
-Nested ESX, as a VM, in VCSA:
+Nested ESX, as a VM, in VCSA - without it VMs can't be started:
 
 ![ESX Configuration](https://github.com/bdereims/vpod/blob/master/nested/Expose%20Hardware%20Nested%20ESX.png)
 
