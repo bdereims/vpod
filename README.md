@@ -23,7 +23,7 @@ Last Update: 2015 12 05 - 10:33 CET
 ***Wait at least 20' after lauching ESX VMs in order to see @IP of vPodRouter and to let VCSA a warm-up.***
  
 ###Nested Env
-Fusion configuration:
+Fusion configuration, nothing to do if you import the OVA:
 
 ![Fusion Configurqtion](https://github.com/bdereims/vpod/blob/master/nested/VT-x%20EPT%20Fusion.png)
 
