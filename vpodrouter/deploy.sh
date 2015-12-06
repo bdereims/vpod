@@ -1,5 +1,6 @@
 #!/bin/bash
-# Example of how to deploy OVA directly vPodRouter
-# ovftool is installed
+# Deploy OVA from here
+# @bdereims
+# In: $1=OVA_File $2=Targeted_ESX $3=Datastore $4=PortGroup
 
-ovftool -ds=dsLocalESX02 -nw=vPodNetwork -dm=thin IAAS.ova vi://esx02
+ovftool -ds=$3 -nw=$4 -dm=thin $1 vi://$2
