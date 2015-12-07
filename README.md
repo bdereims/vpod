@@ -1,5 +1,9 @@
 ![alt tag](http://blogs.vmware.com/vmworld/files/2015/08/CNA_logo-300x203.png) ![NSX](http://vlenzker.net/wp-content/uploads/2015/10/NSX.png)
 
+#Main Purpose
+Virtual Pod that demonstrates containers management in vSpherem leveraging NSX for more flexibility and a better security.
+Without impact on your existing environnement. Easy to install, easy to play with it and easy to uninstall.
+
 [Download 2 Virtual Machines ready to launch within Fusion on Mac OS X (should also work with Workstation and VirtualBox)](https://blue-tale.mooo.com/owncloud/index.php/s/B6xnqb2lDqVoc5p)
 
 ***Pre-requisites:***
