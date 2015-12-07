@@ -6,7 +6,7 @@
 - ESX01 / VM #1: 12Gb of Memory and 128Gb of Disk (Thin)
 - ESX02 / VM #2: 8Gb of Memory and 40Gb of Disk (Thin)
 - More memory to accept more worlkloads or for best performance
-- Tested on Fusion 8.0 and vSphere 6.0U1
+- Tested on Fusion 8.0 (Apple MacBook Pro 16Gb of Memory) and vSphere 6.0U1 (Intel NUC i5 16Gb of Memory) with success
 
 ```
 SHASUM:
