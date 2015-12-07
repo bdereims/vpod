@@ -2,6 +2,12 @@
 
 [Download 2 Virtual Machines ready to launch within Fusion on Mac OS X (should also work with Workstation and VirtualBox)](https://blue-tale.mooo.com/owncloud/index.php/s/B6xnqb2lDqVoc5p)
 
+***Pre-requisites:***
+- ESX01 / VM #1: 12Gb of Memory and 128Gb of Disk (Thin)
+- ESX02 / VM #2: 8Gb of Memory and 40Gb of Disk (Thin)
+- More memory to accept more worlkloads or for best performance
+- Tested on Fusion 8.0 and vSphere 6.0U1
+
 ```
 SHASUM:
 0a5c3e64e9faa0fce11923dcbbcb8ab16bdeeb9f  ESX01.ova
