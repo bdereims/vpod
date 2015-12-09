@@ -28,6 +28,8 @@ Last Update: 2015 12 05 - 10:33 CET
    for Demo and Lab         
 ```                                         
 
+[About Docker Adoption](https://www.datadoghq.com/docker-adoption/?utm_medium=social&utm_source=googleplus&utm_campaign=docker-2681022)
+
 #Installation and Setup
 
 ***Wait at least 20' after lauching ESX VMs in order to see @IP of vPodRouter and to let VCSA a warm-up.***
