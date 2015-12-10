@@ -30,6 +30,7 @@ The logo:
 ```                                         
 
 VSCA Screenshot:
+
 ![VCSA Screenshot](https://github.com/bdereims/vpod/blob/master/nested/VCSA%20vPod.png)
 
 [About Docker Adoption](https://www.datadoghq.com/docker-adoption/?utm_medium=social&utm_source=googleplus&utm_campaign=docker-2681022)
