@@ -20,6 +20,7 @@ deee4669681770d0d64c1783238e898d422c6886  ESX02.ova
 
 Last Update: 2015 12 05 - 10:33 CET
 
+The logo:
 ```
     ___ _____  __        ___         _    
    | __/ __\ \/ /   __ _| _ \___  __| |   
@@ -27,6 +28,9 @@ Last Update: 2015 12 05 - 10:33 CET
    |___|___/_/\_\    \_/|_| \___/\__,_|   
    for Demo and Lab         
 ```                                         
+
+VSCA Screenshot:
+![VCSA Screenshot](https://github.com/bdereims/vpod/blob/master/nested/VCSA%20vPod.png)
 
 [About Docker Adoption](https://www.datadoghq.com/docker-adoption/?utm_medium=social&utm_source=googleplus&utm_campaign=docker-2681022)
 
