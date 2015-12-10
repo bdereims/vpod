@@ -20,7 +20,7 @@ deee4669681770d0d64c1783238e898d422c6886  ESX02.ova
 
 Last Update: 2015 12 05 - 10:33 CET
 
-The logo:
+***The logo:***
 ```
     ___ _____  __        ___         _    
    | __/ __\ \/ /   __ _| _ \___  __| |   
@@ -29,7 +29,7 @@ The logo:
    for Demo and Lab         
 ```                                         
 
-VSCA Screenshot:
+***VSCA Screenshot:***
 
 ![VCSA Screenshot](https://github.com/bdereims/vpod/blob/master/nested/VCSA%20vPod.png)
 
