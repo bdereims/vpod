@@ -35,7 +35,8 @@ Last Update: 2015 12 05 - 10:33 CET
 
 ![VCSA Screenshot](https://github.com/bdereims/vpod/blob/master/nested/VCSA%20vPod.png)
 
-[About Docker Adoption](https://www.datadoghq.com/docker-adoption/?utm_medium=social&utm_source=googleplus&utm_campaign=docker-2681022)
+
+[And about Docker Adoption](https://www.datadoghq.com/docker-adoption/?utm_medium=social&utm_source=googleplus&utm_campaign=docker-2681022)
 
 #Installation and Setup
 
