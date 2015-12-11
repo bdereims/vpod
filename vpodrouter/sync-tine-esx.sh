@@ -7,10 +7,21 @@
 update_esx () {
 	# $1 : the ESX to update
 
+	# Time of the vPodRouter
+	HERE=$(date -u +%Y%m%d%H%M)
+
+	# Verifiy if it's reachable
 	ping -c 1 ${1} 2>&1 > /dev/null
 	if [ $? == 0 ]; then
-		echo "Update Time and Date of ${1}"
-		ssh $1 "esxcli system time set -d ${DAY} -H ${HOUR} -m ${MINUTE} -M ${MONTH} -s ${SECOND} -y ${YEAR}"
+
+		# Time of the destination
+		THERE=$(ssh ${1} "date +%Y%m%d%H%M")
+
+		# If different then update
+		if [ ${HERE} != ${THERE} ]; then	
+			echo "Update Time and Date of ${1}"
+			ssh $1 "esxcli system time set -d ${DAY} -H ${HOUR} -m ${MINUTE} -M ${MONTH} -s ${SECOND} -y ${YEAR}"
+		fi
 	fi
 }
 
