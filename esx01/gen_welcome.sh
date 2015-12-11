@@ -6,6 +6,7 @@
 
 ExtIP="<unset>"
 Waiter=1
+Count=1
 LOCDIR=/vmfs/volumes/dsLocalESX01
 WELCOMEMSG=/etc/vmware/welcome
 
@@ -28,6 +29,12 @@ do
 	# Update the welcome message with the current waiter
 	cp ${LOCDIR}/welcome.wait ${WELCOMEMSG} 
 	cat ${LOCDIR}/wait.${Waiter} >> ${WELCOMEMSG} 
+
+	# If vPodRouter takes time to boot may be there is an issue with VT-x/EPT
+        Count=$(expr ${Count} + 1 )
+        if [ ${Count} -gt 240 ]; then
+		echo "vPodRouter is not yet booted, verify if VT-x/EPT feature is exposed in your hypervisor."
+        fi
 
 	killws		
 
