@@ -24,7 +24,7 @@ SNAT outside networking to access Internet
                 
 You should add the DNS Server in your resolv.conf or entries below in etc/hosts:
 172.16.66.1 vpodrouter.vpod.local
-172.16.66.2 vsca.vpod.local
+172.16.66.2 vcsa.vpod.local
 172.16.66.3 esx01.vpod.local
 172.16.66.4 esx02.vpod.local
 
