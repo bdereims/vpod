@@ -56,7 +56,7 @@ Workstation => C:\ProgramData\VMware\VMware Workstation\config.ini
 
  
 ###Nested Env
-Fusion configuration, nothing to do if you import the OVA:
+Fusion configuration, verify if the VT-x/EPT is exposed:
 
 ![Fusion Configurqtion](https://github.com/bdereims/vpod/blob/master/nested/VT-x%20EPT%20Fusion.png)
 
