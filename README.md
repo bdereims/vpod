@@ -43,11 +43,16 @@ Last Update: 2015 12 05 - 10:33 CET
 
 ###Memory Overcommitment
 In order to start ESX with more memory, we need to activate this feature.
-
 Create or modify the config file with:
 ```
 prefvmx.minVmMemPct = 25
 ```
+
+Hypervision | Location
+----------------------
+Fusion | /Library/Preferences/VMware\ Fusion/config
+Workstation | C:\ProgramData\VMware\VMware Workstation\config.ini
+ 
  
 ###Nested Env
 Fusion configuration, nothing to do if you import the OVA:
