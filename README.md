@@ -35,7 +35,6 @@ Last Update: 2015 12 05 - 10:33 CET
 
 ![VCSA Screenshot](https://github.com/bdereims/vpod/blob/master/nested/VCSA%20vPod.png)
 
-
 [And about Docker Adoption](https://www.datadoghq.com/docker-adoption/?utm_medium=social&utm_source=googleplus&utm_campaign=docker-2681022)
 
 #Installation and Setup
@@ -46,11 +45,9 @@ Last Update: 2015 12 05 - 10:33 CET
 In order to start ESX with more memory, we need to activate this feature.
 
 Create or modify the config file with:
-```prefvmx.minVmMemPct = 25```
-
-This is file is located:
-Fusion on Mac: ```/Library/Preferences/VMware\ Fusion/config```
-Workstation on Windows: ``` 	C:\ProgramData\VMware\VMware Workstation\config.ini```
+```
+prefvmx.minVmMemPct = 25
+```
  
 ###Nested Env
 Fusion configuration, nothing to do if you import the OVA:
