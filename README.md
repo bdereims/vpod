@@ -49,9 +49,11 @@ prefvmx.minVmMemPct = 25
 ```
 
 File location is respectively:
-Fusion: /Library/Preferences/VMware\ Fusion/config
-Workstation: C:\ProgramData\VMware\VMware Workstation\config.ini
- 
+```
+Fusion => /Library/Preferences/VMware\ Fusion/config
+Workstation => C:\ProgramData\VMware\VMware Workstation\config.ini
+```
+
  
 ###Nested Env
 Fusion configuration, nothing to do if you import the OVA:
