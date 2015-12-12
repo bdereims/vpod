@@ -48,7 +48,7 @@ Create or modify the config file with:
 prefvmx.minVmMemPct = 25
 ```
 
-Hypervision | Location
+- Hypervision | Location
 ----------------------
 Fusion | /Library/Preferences/VMware\ Fusion/config
 Workstation | C:\ProgramData\VMware\VMware Workstation\config.ini
