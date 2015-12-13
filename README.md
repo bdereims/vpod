@@ -12,14 +12,6 @@ Without impact on your existing environnement: easy to install, easy to play wit
 - More memory to accept more worlkloads or for best performance
 - Tested on Fusion 8.0 (Apple MacBook Pro 16Gb of Memory) and vSphere 6.0U1 (Intel NUC i5 16Gb of Memory) with success
 
-```
-SHASUM:
-0a5c3e64e9faa0fce11923dcbbcb8ab16bdeeb9f  ESX01.ova
-deee4669681770d0d64c1783238e898d422c6886  ESX02.ova
-```
-
-Last Update: 2015 12 05 - 10:33 CET
-
 
 ***The logo:***
 ```
