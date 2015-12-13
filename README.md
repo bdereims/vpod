@@ -39,7 +39,6 @@ Create or modify the config file with:
 ```
 prefvmx.minVmMemPct = 25
 ```
-I don't recommend to enable this feature unless in accepting very low performance due to usage of disk instead of memory.
 
 File location is respectively:
 ```
@@ -47,6 +46,7 @@ Fusion => /Library/Preferences/VMware\ Fusion/config
 Workstation => C:\ProgramData\VMware\VMware Workstation\config.ini
 ```
 
+***I don't recommend to enable this feature unless to accept very low performance due to the high usage of disk instead of memory.***
  
 ###Nested Env
 Fusion configuration, verify if the VT-x/EPT is exposed:
