@@ -12,14 +12,6 @@ Without impact on your existing environnement: easy to install, easy to play wit
 - More memory to accept more worlkloads or for best performance
 - Tested on Fusion 8.0 (Apple MacBook Pro 16Gb of Memory) and vSphere 6.0U1 (Intel NUC i5 16Gb of Memory) with success
 
-```
-SHASUM:
-0a5c3e64e9faa0fce11923dcbbcb8ab16bdeeb9f  ESX01.ova
-deee4669681770d0d64c1783238e898d422c6886  ESX02.ova
-```
-
-Last Update: 2015 12 05 - 10:33 CET
-
 
 ***The logo:***
 ```
@@ -35,15 +27,29 @@ Last Update: 2015 12 05 - 10:33 CET
 
 ![VCSA Screenshot](https://github.com/bdereims/vpod/blob/master/docs/VCSA%20vPod.png)
 
-
 [And about Docker Adoption](https://www.datadoghq.com/docker-adoption/?utm_medium=social&utm_source=googleplus&utm_campaign=docker-2681022)
 
 #Installation and Setup
 
 ***Wait at least 20' after lauching ESX VMs in order to see @IP of vPodRouter and to let VCSA a warm-up.***
+
+###Memory Overcommitment
+In order to start ESX with more memory, we need to activate this feature.
+Create or modify the config file with:
+```
+prefvmx.minVmMemPct = 25
+```
+
+File location is respectively:
+```
+Fusion => /Library/Preferences/VMware\ Fusion/config
+Workstation => C:\ProgramData\VMware\VMware Workstation\config.ini
+```
+
+***I don't recommend to enable this feature unless to accept very low performance due to the high usage of disk instead of memory.***
  
 ###Nested Env
-Fusion configuration, nothing to do if you import the OVA:
+Fusion configuration, verify if the VT-x/EPT is exposed:
 
 ![Fusion Configurqtion](https://github.com/bdereims/vpod/blob/master/docs/VT-x%20EPT%20Fusion.png)
 
