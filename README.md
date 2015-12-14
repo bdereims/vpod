@@ -33,7 +33,7 @@ Last Update: 2015 12 05 - 10:33 CET
 
 ***VCSA Screenshot:***
 
-![VCSA Screenshot](https://github.com/bdereims/vpod/blob/master/nested/VCSA%20vPod.png)
+![VCSA Screenshot](https://github.com/bdereims/vpod/blob/master/docs/VCSA%20vPod.png)
 
 
 [And about Docker Adoption](https://www.datadoghq.com/docker-adoption/?utm_medium=social&utm_source=googleplus&utm_campaign=docker-2681022)
@@ -45,11 +45,11 @@ Last Update: 2015 12 05 - 10:33 CET
 ###Nested Env
 Fusion configuration, nothing to do if you import the OVA:
 
-![Fusion Configurqtion](https://github.com/bdereims/vpod/blob/master/nested/VT-x%20EPT%20Fusion.png)
+![Fusion Configurqtion](https://github.com/bdereims/vpod/blob/master/docs/VT-x%20EPT%20Fusion.png)
 
 Nested ESX, as a VM, in VCSA - without it VMs can't be started:
 
-![ESX Configuration](https://github.com/bdereims/vpod/blob/master/nested/Expose%20Hardware%20Nested%20ESX.png)
+![ESX Configuration](https://github.com/bdereims/vpod/blob/master/docs/Expose%20Hardware%20Nested%20ESX.png)
 
 Put a static route on your box in order to reach the internal network:
 - The {vPodRouter IP} will be found on the ESX Console when vPodRouter VM is up and running.

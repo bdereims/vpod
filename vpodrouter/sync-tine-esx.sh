@@ -1,8 +1,20 @@
 #!/bin/bash
 # Time Synch for ESX remotely
 # @bdereims
-# In : N/A
+# In : nothing 
 # Out : exit 0
+
+PATH=$PATH:/usr/bin:/bin
+GOOGLEIP="216.58.211.78"
+
+# Update time from web Google page
+ping -c 1 ${GOOGLEIP} 2>&1 > /dev/null
+if [ $? != 0 ]; then
+	echo "Impossible to reach internet in order to synchronise time..."
+	exit 1	
+else
+	date -s "$(wget -qSO- --max-redirect=0 216.58.211.78 2>&1 | grep Date: | cut -d' ' -f5-8)Z" 2>&1 > /dev/null
+fi
 
 update_esx () {
 	# $1 : the ESX to update
