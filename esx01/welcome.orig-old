@@ -1,17 +1,16 @@
 {bgcolor:yellow}{color:black}
-  ____    ____    ____    ____           ____        ____     __  __  ______               ____            __              
- /\  _`\ /\  _`\ /\  _`\ /\  _`\       /|  _ \      /\  _`\  /\ \/\ \/\  _  \             /\  _`\         /\ \             
- \ \,\L\_\ \ \/\ \ \ \/\ \ \ \/\_\     |/\   |      \ \ \/\_\\ \ `\\ \ \ \L\ \      __  __\ \ \L\ \___    \_\ \            
-  \/_\__ \\ \ \ \ \ \ \ \ \ \ \/_/_     \// __`\/\   \ \ \/_/_\ \ , ` \ \  __ \    /\ \/\ \\ \ ,__/ __`\  /'_` \           
-    /\ \L\ \ \ \_\ \ \ \_\ \ \ \L\ \    /|  \L>  <_   \ \ \L\ \\ \ \`\ \ \ \/\ \   \ \ \_/ |\ \ \/\ \L\ \/\ \L\ \          
-    \ `\____\ \____/\ \____/\ \____/    | \_____/\/    \ \____/ \ \_\ \_\ \_\ \_\   \ \___/  \ \_\ \____/\ \___,_\         
-     \/_____/\/___/  \/___/  \/___/      \/____/\/      \/___/   \/_/\/_/\/_/\/_/    \/__/    \/_/\/___/  \/__,_ /         
-      for Demo and Lab | Primary node                                                                                      
-                                                                                                                           
+    ___ _____  __        ___         _    
+   | __/ __\ \/ /   __ _| _ \___  __| |   
+   | _|\__ \>  <    \ V /  _/ _ \/ _` |   
+   |___|___/_/\_\    \_/|_| \___/\__,_|   
+   for Demo and Lab | Primary node        
+                                          
 {/color}{/bgcolor}
+                
 ESX @IP: {color:yellow}{bgcolor:black}{ip}{color:light-grey}{bgcolor:black}
 Entrypoint @IP: {color:yellow}{bgcolor:black}####{color:dark-grey}{bgcolor:black}      
 Inside Network: 172.16.66.0/24
+                
 {color:dark-grey}{bgcolor:black}
 Put a static route on your box in order to reach the internal network:
 Mac OS: route add -net 172.16.66.0/24 ####
@@ -35,10 +34,11 @@ ESX -> root / VMware1!
 vPodRouter -> vmware / VMware1! and root / VMware1!
 NSX -> admin / VMware1! and for Controller/Edge : admin / VMware1!VMware1! 
 
-
 {color:light-grey}{bgcolor:black}VCSA URL -> https://vcsa.vpod.local{color:dark-grey}{bgcolor:black}
 
-
- 
+If you're facing some DHCP issues with VM receiving IP from Fusion instead
+of vPodRouter, you must disable Fusion's DHCP feature for the second NIC (often vmnet1).
+More details how to do it: http://goo.gl/B7N0j9
+                
                 
 bdereims@vmware.com | @bdereims | https://github.com/bdereims/vpod
