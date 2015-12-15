@@ -1,29 +1,27 @@
-{bgcolor:yellow}{color:black}
-  ____    ____    ____    ____           ____        ____     __  __  ______               ____            __              
- /\  _`\ /\  _`\ /\  _`\ /\  _`\       /|  _ \      /\  _`\  /\ \/\ \/\  _  \             /\  _`\         /\ \             
- \ \,\L\_\ \ \/\ \ \ \/\ \ \ \/\_\     |/\   |      \ \ \/\_\\ \ `\\ \ \ \L\ \      __  __\ \ \L\ \___    \_\ \            
-  \/_\__ \\ \ \ \ \ \ \ \ \ \ \/_/_     \// __`\/\   \ \ \/_/_\ \ , ` \ \  __ \    /\ \/\ \\ \ ,__/ __`\  /'_` \           
-    /\ \L\ \ \ \_\ \ \ \_\ \ \ \L\ \    /|  \L>  <_   \ \ \L\ \\ \ \`\ \ \ \/\ \   \ \ \_/ |\ \ \/\ \L\ \/\ \L\ \          
-    \ `\____\ \____/\ \____/\ \____/    | \_____/\/    \ \____/ \ \_\ \_\ \_\ \_\   \ \___/  \ \_\ \____/\ \___,_\         
-     \/_____/\/___/  \/___/  \/___/      \/____/\/      \/___/   \/_/\/_/\/_/\/_/    \/__/    \/_/\/___/  \/__,_ /         
-      for Demo and Lab | Primary node                                                                                      
-                                                                                                                           
+{bgcolor:yellow}{color:black}    _____ ____  ____  ______   ___        _______   _____             ____            __                                    
+   / ___// __ \/ __ \/ ____/  ( _ )      / ____/ | / /   |     _   __/ __ \____  ____/ /                                    
+   \__ \/ / / / / / / /      / __ \/|   / /   /  |/ / /| |    | | / / /_/ / __ \/ __  /                                     
+  ___/ / /_/ / /_/ / /___   / /_/  <   / /___/ /|  / ___ |    | |/ / ____/ /_/ / /_/ /                                      
+ /____/_____/_____/\____/   \____/\/   \____/_/ |_/_/  |_|    |___/_/    \____/\__,_/                                       
+ for Demo and Lab | Primary node                                                                                            
+                                                                                                                            
 {/color}{/bgcolor}
+
 ESX @IP: {color:yellow}{bgcolor:black}{ip}{color:light-grey}{bgcolor:black}
-Entrypoint @IP: {color:yellow}{bgcolor:black}####{color:dark-grey}{bgcolor:black}      
+Entrypoint @IP: {color:yellow}{bgcolor:black}####{color:light-grey}{bgcolor:black}      
 Inside Network: 172.16.66.0/24
-{color:dark-grey}{bgcolor:black}
-Put a static route on your box in order to reach the internal network:
-Mac OS: route add -net 172.16.66.0/24 ####
-Windows: route add 172.16.66.0 mask 255.255.255.0 ####
-Test your env with: ping 172.16.66.1 (vPodRouter) and ping 172.16.66.2 (VCSA)
+
+Set a static route on your box in order to reach the internal network:
+{color:white}{bgcolor:black}Mac OS: route add -net 172.16.66.0/24 ####
+Windows: route add 172.16.66.0 mask 255.255.255.0 #### {color:light-grey}{bgcolor:black}
+Test your env: ping 172.16.66.1 (vPodRouter) and ping 172.16.66.2 (VCSA)
                
 Gateway, DNS Server and NTP server: 172.16.66.1 (vPodRouter)
 DHCP Server for 172.16.66.200 to 172.16.66.254
 NFS Datastore: 172.16.66.1:/data
-SNAT outside networking to access Internet
+Network is SNATed in order to access Internet/Outside
                 
-You should add the DNS Server in your resolv.conf or entries below in etc/hosts:
+You should add entries below in etc/hosts:
 172.16.66.1 vpodrouter.vpod.local
 172.16.66.2 vcsa.vpod.local
 172.16.66.3 esx01.vpod.local
@@ -36,9 +34,11 @@ vPodRouter -> vmware / VMware1! and root / VMware1!
 NSX -> admin / VMware1! and for Controller/Edge : admin / VMware1!VMware1! 
 
 
-{color:light-grey}{bgcolor:black}VCSA URL -> https://vcsa.vpod.local{color:dark-grey}{bgcolor:black}
-
+{color:white}{bgcolor:black}VCSA URL -> https://vcsa.vpod.local
+ESX Host Client: https://esx01.vpod.local/ui{color:dark-grey}{bgcolor:black}
 
  
-                
+
+               
+ 
 bdereims@vmware.com | @bdereims | https://github.com/bdereims/vpod
