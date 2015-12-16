@@ -14,13 +14,7 @@ Without impact on your existing environnement: easy to install, easy to play wit
 
 
 ***The logo:***
-```
-    ___ _____  __        ___         _    
-   | __/ __\ \/ /   __ _| _ \___  __| |   
-   | _|\__ \>  <    \ V /  _/ _ \/ _` |   
-   |___|___/_/\_\    \_/|_| \___/\__,_|   
-   for Demo and Lab         
-```                                         
+![LogoText](https://github.com/bdereims/vpod/blob/master/docs/logo-text.png)                                      
 
 
 ***VCSA Screenshot:***
