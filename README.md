@@ -111,6 +111,11 @@ How to install GuGent:
 - Copy this file from vRA Appliance on your Linux box which will be the template ``` /opt/vmware/share/htdocs/service/software/download/prepare_vra_template.sh``` 
 - Execute the script locally, so you're ready to deploy app
 
+Exemple of App Blueprint ready to demo:
+- Design of Owncloud Blueprint composed by 2 Docker containers in 2 VMs
+![BlueprintDesign](https://github.com/bdereims/vpod/blob/master/docs/blueprint-design.png)
+- VMs into vCenter during the provisionning
+![BlueprintMachines](https://github.com/bdereims/vpod/blob/master/docs/blueprint-machines.png)
 
 bdereims@vmware.com | [@bdereims](https://twitter.com/bdereims) | https://github.com/bdereims/vpod
 
