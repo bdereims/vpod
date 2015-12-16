@@ -33,7 +33,12 @@ do
 	# If vPodRouter takes time to boot may be there is an issue with VT-x/EPT
         Count=$(expr ${Count} + 1 )
         if [ ${Count} -gt 240 ]; then
-		echo "vPodRouter is not yet booted, verify if VT-x/EPT feature is exposed in your hypervisor."
+		echo "vPodRouter is not started, below some ideas why:" >> ${WELCOMEMSG}
+		echo "- Verify if VT-x/EPT feature is exposed in your hypervisor" >> ${WELCOMEMSG}
+		echo "- May be there is no DHCP server, you have to setup manually the ESX management interface" >> ${WELCOMEMSG}
+		echo " " >> ${WELCOMEMSG}
+		echo "After modifications, reboot ESX. " >> ${WELCOMEMSG}
+		break
         fi
 
 	killws		
