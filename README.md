@@ -32,6 +32,9 @@ Without impact on your existing environnement: easy to install, easy to play wit
 #Installation and Setup
 
 ***Wait at least 20' after lauching ESX VMs in order to see @IP of vPodRouter and to let VCSA a warm-up.***
+***If you start up vRA/vRA-IaaS, wait more 15' to be sure that all systems are ready.***
+In order to improve performance, I recommend to increase memory and CPU for VCSA (from 3Gb to 8Gb, from 1 vCPU to 2 vCPU).
+Although, the environment is pretty responsive on my Mac MacBook Pro (i7 / 16Gb / 1To SSD).
 
 ###Memory Overcommitment
 In order to start ESX with more memory, we need to activate this feature.
