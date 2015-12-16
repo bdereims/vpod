@@ -8,12 +8,12 @@
 {/color}{/bgcolor}
 
 ESX @IP: {color:yellow}{bgcolor:black}{ip}{color:light-grey}{bgcolor:black}
-Entrypoint @IP: {color:yellow}{bgcolor:black}####{color:light-grey}{bgcolor:black}      
+Entrypoint @IP: {color:yellow}{bgcolor:black}####{color:dark-grey}{bgcolor:black}      
 Inside Network: 172.16.66.0/24
 
 Set a static route on your box in order to reach the internal network:
 {color:white}{bgcolor:black}Mac OS: route add -net 172.16.66.0/24 ####
-Windows: route add 172.16.66.0 mask 255.255.255.0 #### {color:light-grey}{bgcolor:black}
+Windows: route add 172.16.66.0 mask 255.255.255.0 #### {color:dark-grey}{bgcolor:black}
 Test your env: ping 172.16.66.1 (vPodRouter) and ping 172.16.66.2 (VCSA)
                
 Gateway, DNS Server and NTP server: 172.16.66.1 (vPodRouter)

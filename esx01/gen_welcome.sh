@@ -38,7 +38,8 @@ do
 		echo "- May be there is no DHCP server, you have to setup manually the ESX management interface" >> ${WELCOMEMSG}
 		echo " " >> ${WELCOMEMSG}
 		echo "After modifications, reboot ESX. " >> ${WELCOMEMSG}
-		break
+		killws
+		exit 1
         fi
 
 	killws		
