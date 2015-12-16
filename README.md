@@ -95,6 +95,15 @@ Quick and quite simple:
 - after creation you could enjoy a new container Host in setting ```export DOCKER_HOST=tcp://{VCH IP}:2376```
 - delete VCH with ```./destroy-vch.sh VCH01 dsLocalESX01```
 
+#vRA 7, Yes already installed!
+vRA URL: https://vra.vpod.local with ```administrator / VMware1!```
+Demo Tenant: https://vra.vpod.local/vcac/org/demo with ```admin / VMware1!"
+
+How to install GuGent:
+- Donwload bits from https://vra.vpod.local:5480/installer/GuestAgentInstaller_x64.exe or https://vra.vpod.local:5480/installer/LinuxGuestAgentPkgs.zip
+- Import IaaS Certificat in ```/usr/share/gugent`` with ```echo | openssl s_client -connect iaas.vpod.local:443 | sed -ne '/-BEGIN CERTIFICATE-/,/-END CERTIFICATE-/p' > cert.pem```
+- Execute in ```/usr/share/gugent``` this script ```installgugent.sh iaas.vpod.local:443 ssl```
+
 Some caveats:
 - VCH creation from the GUI could not work due to unknown reasons
 - VCH creation on the NFS Datastore (dsNFS) is possible but performance is low
