@@ -108,7 +108,8 @@ How to install GuGent:
 - Donwload bits from https://vra.vpod.local:5480/installer/GuestAgentInstaller_x64.exe or https://vra.vpod.local:5480/installer/LinuxGuestAgentPkgs.zip
 - Import IaaS Certificat in ```/usr/share/gugent``` with ```echo | openssl s_client -connect iaas.vpod.local:443 | sed -ne '/-BEGIN CERTIFICATE-/,/-END CERTIFICATE-/p' > cert.pem```
 - Execute in ```/usr/share/gugent``` this script ```installgugent.sh iaas.vpod.local:443 ssl```
-- Location of additionnal agent for application deployment on vRA appliance: ```/opt/vmware/share/htdocs/service/software/download``` 
+- Copy this file on your Linux Template``` /opt/vmware/share/htdocs/service/software/download/prepare_vra_template.sh``` 
+- Execute the script locally, so you're ready to deploy app
 
 
 bdereims@vmware.com | [@bdereims](https://twitter.com/bdereims) | https://github.com/bdereims/vpod
