@@ -14,6 +14,7 @@ Without impact on your existing environnement: easy to install, easy to play wit
 
 
 ***The logo:***
+
 ![LogoText](https://github.com/bdereims/vpod/blob/master/docs/logo-text.png)                                      
 
 
