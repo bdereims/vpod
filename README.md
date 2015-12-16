@@ -100,6 +100,17 @@ Some caveats:
 - VCH creation on the NFS Datastore (dsNFS) is possible but performance is low
 - You could create VCH and leverage NSX but you must create IPSets for FW containers
 
+#vRA 7, Yes already installed!
+vRA URL: https://vra.vpod.local with ```administrator / VMware1!```
+Demo Tenant: https://vra.vpod.local/vcac/org/demo with ```admin / VMware1!```
+
+How to install GuGent:
+- Donwload bits from https://vra.vpod.local:5480/installer/GuestAgentInstaller_x64.exe or https://vra.vpod.local:5480/installer/LinuxGuestAgentPkgs.zip
+- Import IaaS Certificat in ```/usr/share/gugent``` with ```echo | openssl s_client -connect iaas.vpod.local:443 | sed -ne '/-BEGIN CERTIFICATE-/,/-END CERTIFICATE-/p' > cert.pem```
+- Execute in ```/usr/share/gugent``` this script ```installgugent.sh iaas.vpod.local:443 ssl```
+- Copy this file from vRA Appliance on your Linux box which will be the template ``` /opt/vmware/share/htdocs/service/software/download/prepare_vra_template.sh``` 
+- Execute the script locally, so you're ready to deploy app
+
 
 bdereims@vmware.com | [@bdereims](https://twitter.com/bdereims) | https://github.com/bdereims/vpod
 
