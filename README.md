@@ -117,8 +117,6 @@ How to install GuGent:
 - PHPMyAdmin URL: ```http://{backend_db_ip}:8081/phpmyadmin```
 - Design of Owncloud Blueprint composed by 2 Docker containers in 2 VMs
 ![BlueprintDesign](https://github.com/bdereims/vpod/blob/master/docs/blueprint-design.png)
-- VMs into vCenter during the provisionning
-![BlueprintMachines](https://github.com/bdereims/vpod/blob/master/docs/blueprint-machines.png)
 - Managed Items in vRA
 ![BlueprintMachines](https://github.com/bdereims/vpod/blob/master/docs/blueprint-items.png)
 - The Owncloud deployed, Up and Runnig!
