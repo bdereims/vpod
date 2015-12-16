@@ -17,11 +17,6 @@ Without impact on your existing environnement: easy to install, easy to play wit
 
 ![LogoText](https://github.com/bdereims/vpod/blob/master/docs/logo-text.png)                                      
 
-
-***VCSA Screenshot:***
-
-![VCSA Screenshot](https://github.com/bdereims/vpod/blob/master/docs/VCSA%20vPod.png)
-
 [And about Docker Adoption](https://www.datadoghq.com/docker-adoption/?utm_medium=social&utm_source=googleplus&utm_campaign=docker-2681022)
 
 #Installation and Setup
