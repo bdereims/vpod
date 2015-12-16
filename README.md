@@ -111,11 +111,18 @@ How to install GuGent:
 - Copy this file from vRA Appliance on your Linux box which will be the template ``` /opt/vmware/share/htdocs/service/software/download/prepare_vra_template.sh``` 
 - Execute the script locally, so you're ready to deploy app
 
-Exemple of App Blueprint ready to demo:
+***App Blueprint example and ready to demo:***
+- MySQL admin credentials are: ```admin / changeme```
+- App URL: ```https://{front_web_ip}:8443```
+- PHPMyAdmin URL: ```http://{backend_db_ip}:8081/phpmyadmin```
 - Design of Owncloud Blueprint composed by 2 Docker containers in 2 VMs
 ![BlueprintDesign](https://github.com/bdereims/vpod/blob/master/docs/blueprint-design.png)
 - VMs into vCenter during the provisionning
 ![BlueprintMachines](https://github.com/bdereims/vpod/blob/master/docs/blueprint-machines.png)
+- Managed Items in vRA
+![BlueprintMachines](https://github.com/bdereims/vpod/blob/master/docs/blueprint-items.png)
+- The Owncloud deployed, Up and Runnig!
+![BlueprintMachines](https://github.com/bdereims/vpod/blob/master/docs/blueprint-owncloud.png)
 
 bdereims@vmware.com | [@bdereims](https://twitter.com/bdereims) | https://github.com/bdereims/vpod
 
