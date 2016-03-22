@@ -91,7 +91,7 @@ Quick and quite simple:
 Some caveats:
 - VCH creation from the GUI could not work due to unknown reasons
 - VCH creation on the NFS Datastore (dsNFS) is possible but performance is low
-- You could create VCH and leverage NSX but you must create IPSets for FW containers
+- You could create VCH and leverage NSX but you must create IPSets for FW containers or use NSX 6.2.1+ with IP & MAC discovery
 
 #vRA 7, Yes already installed!
 vRA URL: https://vra.vpod.local with ```administrator / VMware1!```
